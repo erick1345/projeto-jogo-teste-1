@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CyberCore - Jogue Agora</title>
+    <link href="images/logo.png" rel="shortcut icon" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      h2 {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .game-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 40px auto;
+      }
+
+      .game-frame {
+        width: 80%;
+        height: 500px;
+        border: 5px solid #444;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      }
+
+      .controls {
+        width: 80%;
+        margin-top: 20px;
+        padding: 20px;
+        background-color: #333;
+        color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      }
+
+      .controls ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .controls ul li {
+        font-size: 18px;
+        padding: 10px;
+        border-bottom: 1px solid #555;
+      }
+
+      .controls ul li:last-child {
+        border-bottom: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a href="index.html" title="Home">
+            <img src="images/wall-e-unscreen.gif" alt="Logo CyberCore" />
+          </a>
+          <p>CyberCore</p>
+        </div>
+        <ul>
+          <li><a href="index.html" title="Home">Home</a></li>
+          <li><a href="quemSomos.html" title="Quem somos?">Quem somos?</a></li>
+          <li><a href="historia.html" title="História">História</a></li>
+          <li>
+            <a href="jogueagora.html" title="Jogue Agora" class="efeito"
+              >Jogue Agora</a
+            >
+          </li>
+          <li>
+            <a href="contato.html" title="Contato" class="btn">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="game-container">
+        <h2>Jogue Agora!</h2>
+        <iframe
+          class="game-frame"
+          src="https://example.com/jogo"
+          title="CyberCore Game"
+        ></iframe>
+      </section>
+
+      <section class="controls">
+        <h2>Controles do Jogo</h2>
+        <ul>
+          <li><strong>W / ↑ :</strong> Mover para cima</li>
+          <li><strong>A / ← :</strong> Mover para esquerda</li>
+          <li><strong>S / ↓ :</strong> Mover para baixo</li>
+          <li><strong>D / → :</strong> Mover para direita</li>
+          <li><strong>Espaço:</strong> Atacar</li>
+          <li><strong>Shift:</strong> Correr</li>
+          <li><strong>Esc:</strong> Pausar o jogo</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <p>&copy; 2025 SeuSite. Todos os direitos reservados.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
