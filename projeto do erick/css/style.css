@@ -623,4 +623,92 @@ body {
     font-size: 28px;
   }
 }
+@media screen and (max-width: 768px) {
+  header nav ul {
+    display: none; 
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none; /* Esconde o menu por padrão */
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .menu-toggle {
+    display: block; /* Mostra o botão hamburguer */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .menu.show {
+    display: flex; /* Mostra o menu quando ativado */
+  }
+}
+
+/* Esconde o botão em telas maiores */
+.menu-toggle {
+  display: none; /* Esconde o botão por padrão */
+}
+
+/* Mostra o botão apenas em telas menores */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Mostra o botão em telas menores */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
+/* Esconde o botão em telas maiores */
+.menu-toggle {
+  display: none; /* Esconde o botão por padrão */
+}
+
+/* Mostra o botão apenas em telas menores */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Mostra o botão em telas menores */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
+
+/* Esconde o menu por padrão */
+.menu {
+  display: none;
+  flex-direction: column;
+  background-color: #333;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Mostra o menu quando a classe "show" é adicionada */
+.menu.show {
+  display: flex;
+}
 

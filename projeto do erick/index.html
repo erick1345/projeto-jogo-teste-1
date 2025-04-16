@@ -18,18 +18,17 @@
       <nav>
         <div>
           <a href="index.html" title="Home">
-            <img src="images/wall-e-unscreen.gif" alt="Logo Crow" />
+            <img src="images/wall-e-unscreen.gif" alt="Logo CyberCore" />
           </a>
           <p>CyberCore</p>
         </div>
-        <ul>
+        <button class="menu-toggle">☰</button> <!-- Botão hamburguer -->
+        <ul class="menu">
           <li><a href="index.html" title="Home">Home</a></li>
           <li><a href="#gallery" title="Galeria">Galeria</a></li>
           <li><a href="quemSomos.html" title="Quem somos?">Quem somos?</a></li>
           <li><a href="historia.html" title="História">História</a></li>
-          <li>
-            <a href="contato.html" title="Contato" class="btn">Contato</a>
-          </li>
+          <li><a href="contato.html" title="Contato" class="btn">Contato</a></li>
         </ul>
       </nav>
     </header>
@@ -49,6 +48,8 @@
         </div>
       </section>
 
+     
+
       
       <section id="planos">
         <h2>Personagens</h2>
@@ -58,7 +59,7 @@
             <img src="images/robo boss.gif" alt="Boss" />
           </div>
           <div class="col">
-            <h3>Intermediário</h3>
+            <h3>R-01</h3>
             <img src="images/Idle (1).png" alt="Boss" />
           </div>
           <div class="col">
@@ -129,6 +130,7 @@
       </div>
     </footer>
   </body>
+  
 </html>
 
 <script>
@@ -153,3 +155,13 @@ function nextSlide() {
 
 showSlide(currentSlide);
 </script>
+
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+
+  menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('show'); // Adiciona ou remove a classe "show"
+  });
+</script>
+
