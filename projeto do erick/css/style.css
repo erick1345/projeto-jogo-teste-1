@@ -109,8 +109,7 @@ main {
       background-color: orange;
       color: #0e1729;
       text-decoration: none;
-      padding: 10px;
-      border-radius: 5px;
+      padding:8px; border-radius: 5px;
       font-size: 20px;
     }
 
@@ -349,7 +348,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/* Estilizando a área do jogo */
+
 .game-container {
   display: flex;
   flex-direction: column;
@@ -365,7 +364,7 @@ body {
   border-radius: 10px;
 }
 
-/* Controles do jogo */
+
 .controls {
   width: 80%;
   margin-top: 20px auto;
@@ -397,7 +396,7 @@ body {
   border-bottom: none;
 }
 
-/* Responsividade */
+
 @media screen and (max-width: 768px) {
   .game-frame {
     width: 95%;
@@ -478,7 +477,7 @@ body {
   margin-top: 50px;
 }
 
-/* Estilo do botão futurista */
+
 .btn-cyber {
   background: linear-gradient(135deg, orange, red);
   color: #000;
@@ -628,87 +627,13 @@ body {
     display: none; 
   }
 }
-@media screen and (max-width: 768px) {
-  .menu {
-    display: none; /* Esconde o menu por padrão */
-    flex-direction: column;
-    background-color: #333;
-    position: absolute;
-    top: 60px;
-    right: 10px;
-    width: 200px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-
-  .menu-toggle {
-    display: block; /* Mostra o botão hamburguer */
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-  }
-
-  .menu.show {
-    display: flex; /* Mostra o menu quando ativado */
+@media (max-width: 920px) {
+  header {
+      #navbar-icon {
+          display: block;
+          position: absolute;
+          right: 25px;
+          font-size: 20px;
+      }
   }
 }
-
-/* Esconde o botão em telas maiores */
-.menu-toggle {
-  display: none; /* Esconde o botão por padrão */
-}
-
-/* Mostra o botão apenas em telas menores */
-@media screen and (max-width: 768px) {
-  .menu-toggle {
-    display: block; /* Mostra o botão em telas menores */
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-}
-/* Esconde o botão em telas maiores */
-.menu-toggle {
-  display: none; /* Esconde o botão por padrão */
-}
-
-/* Mostra o botão apenas em telas menores */
-@media screen and (max-width: 768px) {
-  .menu-toggle {
-    display: block; /* Mostra o botão em telas menores */
-    background: none;
-    border: none;
-    color: white;
-    font-size: 24px;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-}
-
-/* Esconde o menu por padrão */
-.menu {
-  display: none;
-  flex-direction: column;
-  background-color: #333;
-  position: absolute;
-  top: 60px;
-  right: 10px;
-  width: 200px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-/* Mostra o menu quando a classe "show" é adicionada */
-.menu.show {
-  display: flex;
-}
-

@@ -18,17 +18,18 @@
       <nav>
         <div>
           <a href="index.html" title="Home">
-            <img src="images/wall-e-unscreen.gif" alt="Logo CyberCore" />
+            <img src="images/wall-e-unscreen.gif" alt="Logo Crow" />
           </a>
           <p>CyberCore</p>
         </div>
-        <button class="menu-toggle">☰</button> <!-- Botão hamburguer -->
-        <ul class="menu">
+        <ul>
           <li><a href="index.html" title="Home">Home</a></li>
           <li><a href="#gallery" title="Galeria">Galeria</a></li>
           <li><a href="quemSomos.html" title="Quem somos?">Quem somos?</a></li>
           <li><a href="historia.html" title="História">História</a></li>
-          <li><a href="contato.html" title="Contato" class="btn">Contato</a></li>
+          <li>
+            <a href="contato.html" title="Contato" class="btn">Contato</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -48,8 +49,6 @@
         </div>
       </section>
 
-     
-
       
       <section id="planos">
         <h2>Personagens</h2>
@@ -59,7 +58,7 @@
             <img src="images/robo boss.gif" alt="Boss" />
           </div>
           <div class="col">
-            <h3>R-01</h3>
+            <h3>Intermediário</h3>
             <img src="images/Idle (1).png" alt="Boss" />
           </div>
           <div class="col">
@@ -96,10 +95,10 @@
           <div class="carousel">
             <div class="slides" id="slides">
               <div class="slide">
-                <img src="images/erick.jpg" alt="Imagem 1" />
+                <img src="images/fotojogo1.png"alt="Imagem 1" />
               </div>
               <div class="slide">
-                <img src="images/teste.jpg" alt="Imagem 2" />
+                <img src="images/fotojogo1.png" alt="Imagem 2" />
               </div>
               <div class="slide">
                 <img src="images/robo boss.gif" alt="Imagem 3" />
@@ -123,14 +122,14 @@
       <div class="footer-container">
         <p>&copy; 2025 SeuSite. Todos os direitos reservados.</p>
         <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a><a 
+          href="https://www.instagram.com/999floco._/"><i class="fab fa-instagram"></i></a>
+          
           <a href="#"><i class="fab fa-twitter"></i></a>
         </div>
       </div>
     </footer>
   </body>
-  
 </html>
 
 <script>
@@ -155,13 +154,3 @@ function nextSlide() {
 
 showSlide(currentSlide);
 </script>
-
-<script>
-  const menuToggle = document.querySelector('.menu-toggle');
-  const menu = document.querySelector('.menu');
-
-  menuToggle.addEventListener('click', () => {
-    menu.classList.toggle('show'); // Adiciona ou remove a classe "show"
-  });
-</script>
-
